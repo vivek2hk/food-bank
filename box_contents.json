@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Milk",
+        "quantity": 2,
+        "category": "Dairy",
+        "image": "https://placehold.co/50x50"
+    },
+    {
+        "name": "Chicken",
+        "quantity": 1,
+        "category": "Meat",
+        "image": "https://placehold.co/50x50"
+    },
+    {
+        "name": "Carrots",
+        "quantity": 5,
+        "category": "Vegetables",
+        "image": "https://placehold.co/50x50"
+    }
+]

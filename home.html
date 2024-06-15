@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Food Bank Inventory Management</title>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-[#F9ECCF] shadow p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="./logo.png" alt="Logo" class="w-12 h-12 mr-4">
+            <div class="text-lg font-bold text-green-600">Waste Not Want Not</div>
+        </div>
+        <div class="flex items-center">
+            <i class="fas fa-user-circle text-2xl text-green-600"></i>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <div class="p-6">
+
+        <!-- Recent Food Bank Availability -->
+        <section class="bg-white shadow rounded-lg p-4 mb-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-semibold text-blue-600">Recent Food Bank Availability</h2>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+            <ul>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Dairy product image" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Milk</h3>
+                            <p class="text-gray-600">Quantity: 20</p>
+                        </div>
+                    </div>
+                    <span class="bg-green-200 text-green-800 px-2 py-1 rounded">Dairy</span>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Meat product image" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-600">Chicken</h3>
+                            <p class="text-gray-600">Quantity: 15</p>
+                        </div>
+                    </div>
+                    <span class="bg-red-200 text-red-800 px-2 py-1 rounded">Meat</span>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Vegetable product image" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Carrots</h3>
+                            <p class="text-gray-600">Quantity: 30</p>
+                        </div>
+                    </div>
+                    <span class="bg-orange-200 text-orange-800 px-2 py-1 rounded">Vegetables</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Box Preparation Section -->
+        <section class="bg-white shadow rounded-lg p-4 mb-6">
+            <h2 class="text-xl font-semibold text-purple-600 mb-4">Box Contents Preview</h2>
+            <ul>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Milk" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600">Milk</h3>
+                            <p class="text-gray-600">Quantity: 2</p>
+                            <p class="text-gray-600">Category: Dairy</p>
+                        </div>
+                    </div>
+                    <button class="text-red-500 hover:text-red-700 transition">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Chicken" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-600">Chicken</h3>
+                            <p class="text-gray-600">Quantity: 1</p>
+                            <p class="text-gray-600">Category: Meat</p>
+                        </div>
+                    </div>
+                    <button class="text-red-500 hover:text-red-700 transition">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="flex items-center justify-between mb-2">
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50" alt="Carrots" class="w-12 h-12 rounded mr-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-600">Carrots</h3>
+                            <p class="text-gray-600">Quantity: 5</p>
+                            <p class="text-gray-600">Category: Vegetables</p>
+                        </div>
+                    </div>
+                    <button class="text-red-500 hover:text-red-700 transition">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+            </ul>
+            <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded mt-4 transition">Accept Box</button>
+        </section>
+
+        <!-- Pickup Information -->
+        <section class="bg-white shadow rounded-lg p-4">
+            <h2 class="text-xl font-semibold text-indigo-600 mb-4">Box Pickup Details</h2>
+            <p class="text-gray-700">Your box will be ready for pickup on:</p>
+            <p class="text-lg font-semibold text-gray-800">September 25, 2023, at 10:00 AM</p>
+            <p class="text-gray-700 mt-2">Pickup Location:</p>
+            <p class="text-lg font-semibold text-gray-800">123 Food Bank St, Cityville</p>
+            <a href="#" class="text-blue-600 hover:text-blue-800 mt-2 inline-block transition">Get Directions</a>
+        </section>
+    </div>
+
+</body>
+</html>

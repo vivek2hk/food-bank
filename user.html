@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>User Preferences</title>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen flex flex-col justify-between">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow p-6">
+        <h1 class="text-3xl font-bold text-green-600">User Preferences</h1>
+        <p class="text-gray-700 mt-2">Customize your food box preferences and dietary restrictions.</p>
+    </header>
+
+    <!-- Preferences Form -->
+    <main class="flex-grow p-6">
+        <form class="bg-white shadow rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Food Box Contents</h2>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Meat</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Dairy</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Bakery</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Fruits</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Vegetables</span>
+                </label>
+            </div>
+
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Dietary Restrictions</h2>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Vegetarian</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Vegan</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Gluten-Free</span>
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span class="ml-2 text-gray-700">Nut-Free</span>
+                </label>
+            </div>
+
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Personal Information</h2>
+            <div class="grid grid-cols-1 gap-4 mb-6">
+
+                
+                <label class="block">
+                    <span class="text-gray-700">Nutritional Target in Calories</span>
+                    <input type="number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                </label>
+                <label class="block">
+                    <span class="text-gray-700">Sex</span>
+                    <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                </label>
+                <label class="block">
+                    <span class="text-gray-700">Location</span>
+                    <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                </label>
+            </div>
+
+            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white shadow p-6 mt-6">
+        <p class="text-gray-700">For support or questions, contact us at <a href="mailto:support@foodbank.com" class="text-blue-600 hover:text-blue-800 transition">support@foodbank.com</a></p>
+        <p class="text-gray-700 mt-2"><a href="#" class="text-blue-600 hover:text-blue-800 transition">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
