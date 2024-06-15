@@ -67,7 +67,14 @@ class ObjectDetectionTool(BaseTool):
     
 def get_image_caption(image_path):
     """
-    Generates a short caption for the provided image.
+    Given an image of a food item, provide the following information in JSON format:
+    {
+    "product": "<Product Name>",
+    "category": "Dairy|Bakery|Fruit|Meat|Grains|Vegetables",
+    "expiry": "<Expiry Date>",
+    "quantity": "<Quantity>"
+    }
+    If the information about the food item is not recognized, use "unknown" as the value and let the user fill in the rest of the details.
 
     Args:
         image_path (str): The path to the image file.
@@ -126,7 +133,14 @@ def get_image_caption(image_path):
 
 def detect_objects(image_path):
     """
-    Detects objects in the provided image.
+        Given an image of a food item, provide the following information in JSON format:
+        {
+        "product": "<Product Name>",
+        "category": "Dairy|Bakery|Fruit|Meat|Grains|Vegetables",
+        "expiry": "<Expiry Date>",
+        "quantity": "<Quantity>"
+        }
+        If the information about the food item is not recognized, use "unknown" as the value and let the user fill in the rest of the details.
 
     Args:
         image_path (str): The path to the image file.
